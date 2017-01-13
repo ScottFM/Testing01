@@ -12,12 +12,6 @@
     android:background="@android:color/holo_orange_dark">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello Scott!"
-        android:id="@+id/textView3" />
-
-    <TextView
         android:text="A few changes have been made."
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -31,21 +25,20 @@
         android:layout_alignParentStart="true" />
 
     <Button
-        android:text="Clicking this does nothing"
+        android:text="Change the background!"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
-        android:id="@+id/button2" />
+        android:id="@+id/button2"
+        android:onClick="buttonOnClick" />
 
-    <CheckBox
-        android:text="CheckIt"
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView3"
-        android:layout_alignRight="@+id/textView2"
-        android:layout_alignEnd="@+id/textView2"
-        android:layout_marginRight="22dp"
-        android:layout_marginEnd="22dp"
-        android:id="@+id/checkBox" />
+        android:text="Hello Scott!"
+        android:id="@+id/textView3"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
 </RelativeLayout>
